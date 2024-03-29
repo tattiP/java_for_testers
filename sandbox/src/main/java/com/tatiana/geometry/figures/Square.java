@@ -3,11 +3,15 @@ package com.tatiana.geometry.figures;
 public class Square {
     public static void printSquareArea(double side) { //
         String text = String.format(
-                "Площадь квадрата со стороной %f = %f", side = squareArea(side));
+                "Площадь квадрата со стороной %f = %f", side = area(side));
         System.out.println(text);
     }
 
-    private static double squareArea(double a) {
+    public static double area(double a) {
         return a * a;
+    }
+
+    public static double perimeter(double a) {
+        return 4 * a;
     }
 }
