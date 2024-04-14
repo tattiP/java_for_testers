@@ -5,19 +5,19 @@ import org.junit.jupiter.api.Test;
 
 public class TriangleTests {
 
-    @Test
+ @Test
     void canCalculatePerimeter(){
-        var t = new Triangle (10.0, 10.0, 15.0);
-        double result = t.Perimeter(10.0, 10.0, 15.0);
-        Assertions.assertEquals(35, new Triangle(10.0, 10.0, 15.0));
+        var s = new Triangle (3.0, 4.0, 5.0);
+        double result = s.Perimeter();
+        Assertions.assertEquals(12, result);
 
     }
 
-    @Test
+  @Test
     void canCalculateArea(){
-        var t = new Triangle(10.0, 10.0, 15.0);
-        double result = t.triangleArea();
-        Assertions.assertEquals(33.1, result);
+        var s = new Triangle(3.0, 4.0, 5.0); // Triangle - это объект. В скобках передали в качестве параметра стороны треуг
+        double result = s.triangleArea(); // здесь мы вызываем метод "Площадь треуг" в этом объекте. Никакие параметры указывать не нужно, тк метод берет параметры объекта в котором он вызывается
+        Assertions.assertEquals(6, result);
     }
 
 }

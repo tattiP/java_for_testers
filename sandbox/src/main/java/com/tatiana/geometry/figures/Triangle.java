@@ -27,7 +27,16 @@ public record Triangle (double a, double b, double c) {
         return p * (p - a) * (p - b) * (p - c);
     }
 
-}
+    public double Perimeter() {
+        return a + b + c;
+    }
+
+    public double triangleArea() {
+        return Math.sqrt(triangleArea(a, b, c));
+    }
+
+    }
+
 
 
 
