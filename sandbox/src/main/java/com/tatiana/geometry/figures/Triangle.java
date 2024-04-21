@@ -6,6 +6,9 @@ public record Triangle (double a, double b, double c) {
         if (a < 0 || b <0 || c <0) {
             throw new IllegalArgumentException("Triangle side should not be negative");
         }
+        if ((a + b) < c || (a + c) < b || (b + c) < a) {
+            throw new IllegalArgumentException("The sum of any two sides must be no less than the third side");
+        }
 
     }
 
