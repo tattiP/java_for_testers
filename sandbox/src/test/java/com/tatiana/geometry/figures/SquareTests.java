@@ -8,11 +8,14 @@ public class SquareTests {
     @Test
 
     void canCalculateArea() {
-        var s = new Square(4.0);
+        var s = new Square(5.0);
         double result = s.area();
-        Assertions.assertEquals(25.0, result);
+       Assertions.assertEquals(25.0, result);
+   //     if (result != 25.0) {
+   //         throw new AssertionError(String.format("Expected %f, actual %f", 25.0, result));
+        }
 
-    }
+
 
 
     @Test

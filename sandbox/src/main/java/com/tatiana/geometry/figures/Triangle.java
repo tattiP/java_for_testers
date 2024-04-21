@@ -2,6 +2,12 @@ package com.tatiana.geometry.figures;
 
 public record Triangle (double a, double b, double c) {
 
+    public Triangle {
+        if (a < 0 || b <0 || c <0) {
+            throw new IllegalArgumentException("Triangle side should not be negative");
+        }
+
+    }
 
     public static void printTrianglePerimeter(double a, double b, double c) {
         var text = String.format("Периметр треугольника со сторонами %f и %f и %f = %f", a, b, c, Perimeter(a, b, c));

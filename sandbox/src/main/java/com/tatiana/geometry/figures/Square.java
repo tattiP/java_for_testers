@@ -5,7 +5,7 @@ public record Square(double side) {
 
     public Square {
         if (side < 0) {
-            throw new IllegalArgumentException("Square side should be non negative");
+            throw new IllegalArgumentException("Square side should be non-negative");
 
     }
 }
